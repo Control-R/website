@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Control + R | Da una segunda vida a tu portátil</title>
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- SmartAddon.com Verification -->
+    <meta name="smartaddon-verification" content="936e8d43184bc47ef34e25e426c508fe" />
+	<meta name="keywords" content="">
+	<meta name="description" content="Portátiles de segunda mano destinados al aprendizaje temprano de programación">
+    <!-- site css -->
+    <!-- site css -->
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/site.min.js"></script> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+
+      <script>
+          $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html, body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            });
+          });
+          
+          
+          $(window).scroll(function() {
+            if ($(this).scrollTop()>50)
+             {
+                $('.navbar-nav').fadeOut();
+             }
+            else
+             {
+              $('.navbar-nav').fadeIn();
+             }
+         });
+          
+        $(document).ready(function() {
+            $(".tabs-menu a").click(function(event) {
+                event.preventDefault();
+                $(this).parent().addClass("current");
+                $(this).parent().siblings().removeClass("current");
+                var tab = $(this).attr("href");
+                $(".tab-content").not(tab).css("display", "none");
+                $(tab).fadeIn();
+            });
+        });
+      </script>  
+      
+  </head>
+  <body id="inicio" style="background-color: rgb(241, 242, 246);">
+    <div class="docs-header">
+     
+     
+      <!--nav-->
+      <nav class="navbar navbar-default navbar-custom" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="imgs/controlR-logo.png" height="40"></a>
+          </div>
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#como-funciona" class="nav-link" href="como-funciona.html">Cómo funciona</a></li>
+              <li><a class="nav-link" href="peticiones.html">Acceso a organizaciones</a></li>
+              <li><a class="nav-link" href="recursos.html">Recursos + R</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      
+      
+      <!--header-->
+      <div class="header topic">
+		<div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                  <h2>Dale una nueva vida a tu portátil</h2>
+                  <h4>Ayuda a que un joven aprenda a programar</h4>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                  <a href="#donar-portatil">    
+                    <button type="button" class="btn btn-warning btn-block">Donar ahora</button>
+                  </a>      
+                </div>            
+            </div>
+        </div>
+      </div>
+        
+    </div>
+    
+    
+    
+    <!--intro-->
+    <div class="intro topic">
+        <div class="container documents">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>¿Por qué enseñar código a los más pequeños?</h3>
+                    <ul>
+                        <li>Es fácil y divertido</li>
+                        <li>Promueve el uso activo y no el consumo pasivo de la tecnología</li>
+                        <li>Fomenta la igualdad de género</li>
+                        <li>Mejora el desempeño de los estudiantes en otras materias</li>  
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <iframe width="100%" height="330" src="https://www.youtube.com/embed/fjQ7XaMNQNc?modestbranding=1&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>            
+                </div>
+                <span id="como-funciona"></span>
+            </div> 
+            
+            
+            
+            <div class="row pasos" style="margin-top:100px;">
+                <div class="col-md-4">
+                    <h3>¿Qué puedes hacer para colaborar?</h3>
+                </div>
+                <div class="col-md-2">
+                    <img src="imgs/paso1-portatil.png">
+                    <span class="paso-titulo">Localiza tu viejo portátil</span>  
+                    <span class="paso-descripcion">
+                        No importa la edad, nos encargaremos de dejarlo como el primer día.
+                    </span>  
+                </div> 
+                <div class="col-md-2">
+                   <img src="imgs/paso2-usb.png">
+                    <span class="paso-titulo">Prepáralo para la batalla</span>  
+                    <span class="paso-descripcion">
+                        Asegurate de borrar todos tus datos, te dejamos una <a href="#">guía paso a paso</a>.
+                    </span>  
+                </div>                
+                <div class="col-md-2">
+                   <img src="imgs/paso3-web.png">
+                    <span class="paso-titulo">Súbelo a nuestra web</span>  
+                    <span class="paso-descripcion">
+                        Rellena un <a href="#donar-portatil">sencillo formulario</a> con tus datos de contacto.
+                    </span>  
+                </div>                 
+                <div class="col-md-2">
+                   <img src="imgs/paso4-donacion.png">
+                    <span class="paso-titulo">Haz feliz a un niño</span>  
+                    <span class="paso-descripcion">
+                        Una de nuestras organizaciones colaboradoras se encargará de que tu portátil disfrute de una nueva vida.
+                    </span> 
+                </div>                            
+                
+            </div>   
+            
+        </div>
+    </div>
+    
+    
+    
+
+    
+    
+    <!--últimas peticiones-->
+    <div class="lista-proyectos topic">
+        <div class="container documents">
+
+            <div class="row">
+                <div class="col-md-9"><h2>Proyectos en busca de equipos</h2></div>
+                <div class="col-md-3"><button type="button" class="btn btn-primary btn-block">Ver todos</button></div>
+            </div> 
+
+            <div class="row">
+                
+                <a href="#">    
+                  <div class="col-md-3">
+                    <div class="jumbotron">
+                      <div class="jumbotron-photo"><img src="imgs/org-learn-to-code.jpg"></div>
+                      <div class="jumbotron-contents">
+                        <h5 class="proy-nombre">Learn to code with me</h5>
+                         <span class="proy-ciudad">Valencia</span>
+                         <p class="proy-info">Info</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                
+                <a href="#">  
+                  <div class="col-md-3">
+                    <div class="jumbotron">
+                      <div class="jumbotron-photo"><img src="imgs/org-coder-dojo.jpg"></div>
+                      <div class="jumbotron-contents">
+                        <h5 class="proy-nombre">Coder Dojo</h5>
+                         <span class="proy-ciudad">Madrid</span>
+                         <p class="proy-info">Info</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                
+                <a href="#">   
+                  <div class="col-md-3">
+                    <div class="jumbotron">
+                      <div class="jumbotron-photo"><img src="imgs/org-medialab.jpg"></div>
+                      <div class="jumbotron-contents">
+                        <h5 class="proy-nombre">Medialab Prado</h5>
+                         <span class="proy-ciudad">Madrid</span>
+                         <p class="proy-info">Info</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                
+                <a href="#">  
+                  <div class="col-md-3">
+                    <div class="jumbotron">
+                      <div class="jumbotron-photo"><img src="imgs/org-asociacion-vecinos.jpg"></div>
+                      <div class="jumbotron-contents">
+                        <h5 class="proy-nombre">Federación Antonio Machado</h5>
+                         <span class="proy-ciudad">Valladolid</span>
+                         <p class="proy-info">Info</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
+            </div> <!-- /Row -->
+
+        </div> <!-- /Container -->
+    </div>  <!-- /Topic -->
+     
+    
+    
+    <!-- Alta nuevos portatiles -->
+    <div class="nuevo-portatil topic" id="donar-portatil">
+        <div class="container documents">
+            <div class="row">
+                <div class="col-md-9"><h2>Dona tu portatil</h2></div>
+            </div> 
+            <div class="row">  
+                <div class="col-md-6" style="margin-top:5px;"> 
+                      <form id="envioOrdenador">
+                            <label>Marca:</label>
+                            <select id="marca" name="marca" class="selecter_1">
+                                <option value=''>Elegir</option>
+                                <option value='acer'>Acer</option>
+                                <option value='alienware'>Alienware</option>
+                                <option value='apple'>Apple</option>
+                                <option value='asus'>Asus</option>
+                                <option value='compaq'>Compaq</option>
+                                <option value='dell'>Dell</option>
+                                <option value='fujitsu'>Fujitsu</option>
+                                <option value='hp'>HP</option>
+                                <option value='ibm'>IBM</option>
+                                <option value='lenovo'>Lenovo</option>
+                                <option value='lg'>LG</option>
+                                <option value='packard bell'>Packard Bell</option>
+                                <option value='panasonic'>Panasonic</option>
+                                <option value='samsung'>Samsung</option>
+                                <option value='sony'>Sony</option>
+                                <option value='toshiba'>Toshiba</option>
+                                <option value='vaio'>Vaio</option>
+                                <option value='otra'>Otra</option>
+                            </select>
+                            <label>Modelo:</label>
+                            <input type="text" id="modelo" name="modelo" class="form-control" placeholder="Escribe el nombre del modelo">
+                            <label>Procesador:</label>
+                            <input type="text" id="procesador" name="procesador" class="form-control" placeholder="Escribe el modelo de procesador">
+                            <label>Memoria RAM:</label>
+                            <input type="text" id="ram" name="ram" class="form-control" placeholder="Escribe la memoria RAM">
+                            <label>Disco duro:</label>
+                            <input type="text" id="hdd" name="hdd" class="form-control" placeholder="Escribe la capacidad del disco duro">
+                            <label>Tamaño de la pantalla:</label>
+                            <input type="text" id="resolucion" name="resolucion" class="form-control" placeholder="Escribe el tamaño de la pantalla">
+                            <label>Imagen:</label>
+                            <input type="file" id="imagen" name="imagen" class="form-control">
+                            <label>Estado actual y otros detalles:</label>
+                            <textarea id="otros" name="otros" class="form-control"></textarea>	
+                    </form>	   
+                </div>
+                
+                
+                <div class="col-md-6">
+           
+                    <div id="tabs-container">
+                        <ul class="tabs-menu">
+                            <li class="current"><a href="#tab-1">Es mi primera donación</a></li>
+                            <li><a href="#tab-2">Loguearse</a></li>
+                        </ul>
+                        <div class="tab">
+                            <div id="tab-1" class="tab-content">
+                                            <form id="registroUsuario">
+                                                <label>Nombre:</label>
+                                                <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Escribe su nombre">
+                                                <label>Email:</label>
+                                                <input type="text" id="email" name="email" class="form-control" placeholder="Escribe su email">
+                                                <label>Contraseña:</label>
+                                                <input type="password" id="pass" name="pass" class="form-control" placeholder="Escribe una contraseña">
+                                                <label>Población:</label>
+                                                <input type="text" id="poblacion" name="poblacion" class="form-control" placeholder="Escribe su poblacion">
+                                                <label>Provincia:</label>
+                                                <select id="provincia" name="provincia" class="selecter_1">
+                                                    <option value='alava'>Álava</option>
+                                                    <option value='albacete'>Albacete</option>
+                                                    <option value='alicante'>Alicante/Alacant</option>
+                                                    <option value='almeria'>Almería</option>
+                                                    <option value='asturias'>Asturias</option>
+                                                    <option value='avila'>Ávila</option>
+                                                    <option value='badajoz'>Badajoz</option>
+                                                    <option value='barcelona'>Barcelona</option>
+                                                    <option value='burgos'>Burgos</option>
+                                                    <option value='caceres'>Cáceres</option>
+                                                    <option value='cadiz'>Cádiz</option>
+                                                    <option value='cantabria'>Cantabria</option>
+                                                    <option value='castellon'>Castellón/Castelló</option>
+                                                    <option value='ceuta'>Ceuta</option>
+                                                    <option value='ciudadreal'>Ciudad Real</option>
+                                                    <option value='cordoba'>Córdoba</option>
+                                                    <option value='cuenca'>Cuenca</option>
+                                                    <option value='girona'>Girona</option>
+                                                    <option value='laspalmas'>Las Palmas</option>
+                                                    <option value='granada'>Granada</option>
+                                                    <option value='guadalajara'>Guadalajara</option>
+                                                    <option value='guipuzcoa'>Guipúzcoa</option>
+                                                    <option value='huelva'>Huelva</option>
+                                                    <option value='huesca'>Huesca</option>
+                                                    <option value='illesbalears'>Illes Balears</option>
+                                                    <option value='jaen'>Jaén</option>
+                                                    <option value='acoruña'>A Coruña</option>
+                                                    <option value='larioja'>La Rioja</option>
+                                                    <option value='leon'>León</option>
+                                                    <option value='lleida'>Lleida</option>
+                                                    <option value='lugo'>Lugo</option>
+                                                    <option value='madrid'>Madrid</option>
+                                                    <option value='malaga'>Málaga</option>
+                                                    <option value='melilla'>Melilla</option>
+                                                    <option value='murcia'>Murcia</option>
+                                                    <option value='navarra'>Navarra</option>
+                                                    <option value='ourense'>Ourense</option>
+                                                    <option value='palencia'>Palencia</option>
+                                                    <option value='pontevedra'>Pontevedra</option>
+                                                    <option value='salamanca'>Salamanca</option>
+                                                    <option value='segovia'>Segovia</option>
+                                                    <option value='sevilla'>Sevilla</option>
+                                                    <option value='soria'>Soria</option>
+                                                    <option value='tarragona'>Tarragona</option>
+                                                    <option value='santacruztenerife'>Santa Cruz de Tenerife</option>
+                                                    <option value='teruel'>Teruel</option>
+                                                    <option value='toledo'>Toledo</option>
+                                                    <option value='valencia'>Valencia/Valéncia</option>
+                                                    <option value='valladolid'>Valladolid</option>
+                                                    <option value='vizcaya'>Vizcaya</option>
+                                                    <option value='zamora'>Zamora</option>
+                                                    <option value='zaragoza'>Zaragoza</option>
+                                                </select>
+                                                <label>Codigo postal:</label>
+                                                <input type="text" id="cp" name="cp" class="form-control" placeholder="Escribe su codigo postal">
+                                            </form>	
+                            </div>
+                            <div id="tab-2" class="tab-content">
+                                   <form id="logueoUsuario">
+                                        <label>Email:</label>
+                                        <input type="text" id="Lemail" name="Lemail" class="form-control" value="antonio@controlr.es">
+                                        <label>Contraseña:</label>
+                                        <input type="password" id="Lpass" name="Lpass" class="form-control" value="0000">
+                                        <input type="button" value="Accede al sistema" id="loginUser" class="btn btn-primary">
+                                    </form>
+                            </div>
+                        </div>
+                    </div>  
+                     
+                    <input type="button" value="Donar este portátil" id="addLaptop" class="btn btn-success">
+                    
+                </div>
+            </div>        
+        </div>
+    </div>
+       
+    
+    
+    <!--Mapa-->
+    <div class="lista-proyectos topic">
+        <div class="container documents">
+			<div class="row">
+                <div class="col-md-9"><h2>Donaciones actuales</h2></div>
+                <div class="col-md-3"><button type="button" class="btn btn-primary btn-block">API - Open Data</button></div>
+            </div> 
+            <div class="row">
+				<div class="col-md-12">
+					<div id="target" style="width: 100%; height: 500px;"></div>
+				</div>
+			</div>
+        </div>
+    </div>
+    
+    
+    
+   <!--footer-->
+   <div class="footer topic" style="background-color: #4e4e4e;">
+      <div class="container">
+          <div class="row"> 
+              <div class="col-md-8">
+                (cc) Control R · 2016
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!--datos-->
+	<table id="source">
+        <tbody>
+            <tr>
+                <th class="source">Madrid</td>
+                <td class="value">12</td>
+            </tr>
+            <tr>
+                <th class="source">Valladolid</td>
+                <td class="value">3</td>
+            </tr>
+            <tr>
+                <th class="source">Bilbao</td>
+                <td class="value">7</td>
+            </tr>
+            <tr>
+                <th class="source">Sevilla</td>
+                <td class="value">5</td>
+            </tr>
+            <tr>
+                <th class="source">Vigo</td>
+                <td class="value">6</td>
+            </tr>
+            <tr>
+                <th class="source">Barcelona</td>
+                <td class="value">9</td>
+            </tr>
+            <tr>
+                <th class="source">Malaga</td>
+                <td class="value">5</td>
+            </tr>
+			
+        </tbody>
+    </table>
+    
+  </body>
+<script src="js/usuario.js"></script>
+<script src="js/heatmap.js"></script>
+<script type="text/javascript">
+    $(function() {
+	    $('#source').heatmap('target', 4);
+    });
+</script>
+</html>
